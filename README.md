@@ -1,12 +1,61 @@
-# React + Vite
+**🎉 Synk In**
+A smart, minimal, and responsive campus event recommender web app designed to help students discover upcoming events tailored to their interests.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**📌 Overview**
+Synk In is a single-page web application that displays and filters upcoming campus events. Designed for simplicity and accessibility, the app helps students stay updated on club activities, workshops, cultural events, and more; everything in one place.
 
-Currently, two official plugins are available:
+**🚀 Features**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔍 Filter Events by Category - Filter events based on type (e.g., tech, cultural, workshops, hackathons, etc.).
+📅 Chronological Event Display - Events are listed in order of date and time.
+📱 Responsive UI - Clean and responsive design that works across devices.
+💾 Firestore Integration - Events are fetched dynamically from a Firebase Firestore database.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**🛠️ Tech Stack**
+
+Frontend	Firebase	Styling
+React.js	Firestore	Tailwind CSS
+Vite	Firebase Hosting (optional)	Responsive Design
+
+**🧠 Future Scope**
+
+🔐 User Authentication and Preference Saving
+📅 Calendar View of Events
+🔎 Search by Club/Event Name
+🔁 Gemini API Integration for personalized recommendations
+📤 Admin Panel for Club Event Uploads
+
+**📂 Folder Structure**
+
+src/
+├── assets/             # Images or icons
+├── App.jsx             # Main component
+├── Events.jsx          # Event display logic
+├── Interests.jsx       # Interests filtering UI
+├── Login.jsx           # (optional - future)
+├── firebase.js         # Firebase config
+├── App.css, index.css  # Styling files
+├── main.jsx            # Entry point
+
+**🔧 Installation & Setup**
+
+git clone https://github.com/yourusername/synk-in.git
+cd synk-in
+npm install
+npm run dev
+💡 Please make sure to set up your Firebase project and Firestore DB as per your structure.
+
+**📁 Firestore Structure**
+
+events (collection)
+│
+├── eventId (document)
+│   ├── title: "AI in Healthcare"
+│   ├── club: "Tech Club"
+│   ├── date: "2025-07-17"
+│   ├── time: "15:00"
+│   ├── type: "Tech"
+
+
+Built with 💙 for campus communities
